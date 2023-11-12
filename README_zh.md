@@ -67,12 +67,12 @@ bin/goLeaf -conf configs/config.yaml
 - 请求接口
 
 ```
-curl http://localhost:8000/api/segment/get/leaf-segment-test
+curl http://localhost:18001/api/segment/get/leaf-segment-test
 
 // 查看cache中号段的状态
-http://localhost:8000/monitor/cache
+curl http://localhost:18001/monitor/cache
 // 查看DB中号段的数据
-http://localhost:8000/monitor/db
+curl http://localhost:18001/monitor/db
 ```
 ### 雪花模式
 
@@ -93,17 +93,17 @@ data:
 - 请求接口
 
 ```
-curl http://localhost:8000/api/snowflake/get
+curl http://localhost:18001/api/snowflake/get
 
 // 解析雪花ID
-http://localhost:8000/decodeSnowflakeId
+curl http://localhost:18001/decodeSnowflakeId
 ```
 
 ### UI界面
 
 访问地址：http:port/web
 
-> 例如：http://127.0.0.1:8001/web
+> 例如：http://127.0.0.1:18001/web
 
 ![DB号段](doc/image-20221101201529905.png)
 
